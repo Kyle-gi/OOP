@@ -17,12 +17,7 @@ public class Exercise {
                 sum += i;
             }
         }
-        if(sum > number){
-            return true;
-        }
-        else {
-            return false;
-        }
+        return sum > number;
     }
 
     public static boolean esDefectuoso(){
