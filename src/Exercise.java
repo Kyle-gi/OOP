@@ -57,8 +57,20 @@ public class Exercise {
         return true;
     }
 
-    public static boolean esAmigo(){
-
+    public static boolean esAmigo(int A, int B){
+        int sumA = 0;
+        int sumB = 0;
+        for (int i = 1; i < A; i++) {
+            if (A % i == 0) {
+                sumA = sumA + i;
+            }
+        }
+        for (int i = 1; i < B; i++){
+            if (B % i == 0){
+                sumB = sumB + i;
+            }
+        }
+        return sumB == A && sumA == B;
     }
 
     public static boolean esEnemigo(){
