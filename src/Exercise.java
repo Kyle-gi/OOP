@@ -32,11 +32,15 @@ public class Exercise {
     }
 
     public static boolean esOdioso(int number){
-        int sum = 0;
+        String binary = Integer.toBinaryString(number);
+        int count = 0;
 
-        for (int i = 1; i < number; i++){
-            if(number )
+        for(int i = 0; i < binary.length(); i++){
+            if (binary.charAt(i) == '1'){
+                count++;
+            }
         }
+        return number % 2 == 1;
     }
 
     public static boolean esPrimo(){
