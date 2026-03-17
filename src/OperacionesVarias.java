@@ -1,4 +1,4 @@
-public class Exercise {
+public class OperacionesVarias {
     public static boolean esPerfecto(int number){
         int sum = 0;
         for (int i = 1; i < number; i++) {
@@ -73,11 +73,20 @@ public class Exercise {
         return sumB == A && sumA == B;
     }
 
-    public static boolean esEnemigo(){
-
+    public static boolean esEnemigo(int A, int B){
+        return !esAmigo(A, B);
     }
 
     public static void dibujarPiramide(){
-
+        int row = 10;
+        for (int i = 0; i < row; i++) {
+            for (int j = row - i - 1; j>=1;j--){
+                System.out.print(" ");
+            }
+            for (int j = 0; j <= i; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
 }
