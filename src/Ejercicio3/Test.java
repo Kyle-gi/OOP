@@ -26,6 +26,8 @@ public class Test {
             case 2:
                 OperacionesArray.listArray();
                 break;
+            case 3:
+                OperacionesArray.orderArray();
         }
         } while (option != 0);
         sc.close();

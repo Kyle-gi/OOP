@@ -34,5 +34,23 @@ public class OperacionesArray {
     public static void orderArray(){
         Arrays.sort(insert);
         System.out.print(Arrays.toString(insert));
+        System.out.println();
+    }
+
+    public static void Average(){
+
+        double sum = 0;
+
+        if (insert == null){
+                System.out.println("Array not loaded yet!");
+                return;
+        }
+
+        for (int i = 0; i < insert.length; i++) {
+            sum = insert[i] + sum;
+        }
+
+        double media = sum / insert.length;
+        System.out.println("The average is: " + media);
     }
 }
