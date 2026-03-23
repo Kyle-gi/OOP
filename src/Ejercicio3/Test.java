@@ -1,6 +1,5 @@
 package Ejercicio3;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Test {
@@ -14,6 +13,8 @@ public class Test {
         System.out.println("1. Load Array");
         System.out.println("2. List the array");
         System.out.println("3. Order the array");
+        System.out.println("4. Calculate Average");
+        System.out.println("5. Inverted array");
         System.out.println();
         System.out.print("Insert your option: ");
         option = sc.nextInt();
@@ -28,6 +29,21 @@ public class Test {
                 break;
             case 3:
                 OperacionesArray.orderArray();
+                break;
+            case 4:
+                OperacionesArray.Average();
+            case 5:
+                int[] invertido = OperacionesArray.invertedArray();
+                if (invertido != null) {
+                    System.out.print("Inverted array: ");
+                    for (int i = 0; i < invertido.length; i++) {
+                        System.out.print(invertido[i] + " ");
+                    }
+                    System.out.println();
+                } else {
+                    System.out.println("Array not loaded yet!");
+                }
+                break;
         }
         } while (option != 0);
         sc.close();

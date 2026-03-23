@@ -53,4 +53,17 @@ public class OperacionesArray {
         double media = sum / insert.length;
         System.out.println("The average is: " + media);
     }
+
+    public static int[] invertedArray(){
+        if (insert == null) {
+            return null;
+        }
+
+        int[] copia = new int[insert.length];
+
+        for (int i = 0; i < insert.length; i++){
+            copia[insert.length - 1 - i] = insert[i];
+        }
+        return copia;
+    }
 }
