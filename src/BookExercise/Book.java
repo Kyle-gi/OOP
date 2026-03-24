@@ -46,6 +46,24 @@ public class Book {
         this.available = available;
     }
 
+    public void borrowBook() {
+        if (available) {
+            available = false;
+            System.out.println("Book borrowed: " + title);
+        } else {
+            System.out.println("Book is already borrowed!");
+        }
+    }
+
+    public void returnBook() {
+        if (!available) {
+            available = true;
+            System.out.println("Book returned: " + title);
+        } else {
+            System.out.println("Book was not borrowed!");
+        }
+    }
+
     public void display(){
         System.out.print("Book title: " + title + ", Book Author: " + author + ", Book Year: " + year + "Availability: " + available);
     }
