@@ -2,13 +2,13 @@ package BookExercise;
 
 public class Library {
 
-    private int[] books = new int[5];
+    private Book[] books;
 
-    public void addBook(Book b){
-        th
+    public Library() {
+        books = new Book[5];
     }
 
-    public Library(int[] books) {
-        this.books = books;
+    public void addBook(Book b){
+
     }
 }
