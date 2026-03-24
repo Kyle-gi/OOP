@@ -26,7 +26,11 @@ public class Person {
         this.age = age;
     }
 
-    public  void display(){
-        System.out.println("Name: " + name + ", Age: " + age);
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
     }
 }

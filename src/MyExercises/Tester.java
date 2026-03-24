@@ -14,6 +14,6 @@ public class Tester {
 
 
         Person pr = new Person(name, age);
-        pr.display();
+        System.out.println(pr.toString());
     }
 }
